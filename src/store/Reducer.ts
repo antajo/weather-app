@@ -12,16 +12,6 @@ const Reducer = (state: State, action: Action) => {
         ...state,
         location: action.payload,
       };
-    // case "SET_CURRENT_WEATHER":
-    //   return {
-    //     ...state,
-    //     currentWeather: action.payload,
-    //   };
-    // case "SET_FORECAST_WEATHER":
-    //   return {
-    //     ...state,
-    //     forecast: action.payload,
-    //   };
     default: {
       return state;
     }
