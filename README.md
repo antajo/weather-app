@@ -1,4 +1,4 @@
-# Volvo Weather App
+# Weather App
 
 Weather forecast using `www.metaweather.com`.
 
