@@ -9,6 +9,9 @@ import Unit from "./Unit";
 const NoData = () => {
   return <h4>Search valid location to get the weather forecast.</h4>;
 };
+const Loading = () => {
+  return <h4>Loading...</h4>;
+};
 
 type PropType = {
   weather: WeatherType;
@@ -37,14 +40,17 @@ const Forecast = ({ weather, unit }: PropType) => {
 const Home = () => {
   const { location, unit } = useStore();
   const [weather, setWeather] = useState<WeatherType | null>(null);
+  const [loader, setLoader] = useState(false);
 
   const fetchWeatherData = async (woeid: number) => {
+    setLoader(true);
     try {
       const { data } = await getWeather(woeid);
       setWeather(data);
     } catch (err) {
       setWeather(null);
     }
+    setLoader(false);
   };
 
   useEffect(() => {
@@ -57,8 +63,9 @@ const Home = () => {
 
   return (
     <div className="content-area" data-testid="home">
+      {loader && <Loading />}
       {weather && <Forecast weather={weather} unit={unit} />}
-      {!weather && <NoData />}
+      {!weather && !loader && <NoData />}
     </div>
   );
 };
