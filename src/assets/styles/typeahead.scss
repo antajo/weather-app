@@ -1,0 +1,49 @@
+.form-control {
+  width: 20rem;
+  padding: 0.5rem 0.75rem;
+  border: 2px solid #bebebe;
+  outline: none;
+  border-radius: 1rem;
+  height: 2rem;
+  font-weight: 600;
+  color: gray;
+  font-size: 1rem;
+  @media (max-width: 768px) {
+    width: 15rem;
+    font-size: 0.9rem;
+  }
+  @media (max-width: 480px) {
+    width: 10rem;
+    font-size: 0.8rem;
+  }
+}
+.dropdown-menu {
+  padding: 0.5rem;
+  font-size: 0.85rem;
+  border: 2px solid #dadada5c;
+  border-top-width: 0;
+  background: #fff;
+  border-radius: 0 0 5px 5px;
+  .dropdown-item {
+    display: block;
+    padding: 5px 0;
+    border-bottom: 1px solid #dadada5c;
+    font-weight: 600;
+    color: gray;
+    &:last-child {
+      border: none;
+    }
+    &:hover {
+      background: #f3f3f3;
+    }
+  }
+  @media (max-width: 768px) {
+    font-size: 0.9rem;
+  }
+  @media (max-width: 480px) {
+    font-size: 0.7rem;
+  }
+}
+.rbt-aux {
+  display: none;
+}

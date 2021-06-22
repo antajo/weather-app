@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Montserrat;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+h4,
+h3,
+h2,
+p {
+  margin: 0;
+}
+@media (min-width: 768px) {
+  ::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(105, 102, 102, 0.3);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: rgba(3, 112, 112, 0.664);
+    outline: none;
+  }
+}
+.app {
+  min-height: 100vh;
+  background: #d1e7fa61;
+}

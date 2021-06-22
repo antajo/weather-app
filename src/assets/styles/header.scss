@@ -1,0 +1,15 @@
+.header {
+  display: flex;
+  padding: 1rem 2rem;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+  background: #fff;
+  @media (max-width: 768px) {
+    padding: 0.5rem 1rem;
+  }
+}

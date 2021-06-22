@@ -1,0 +1,25 @@
+.content-area {
+  padding: 100px 2rem 0;
+  display: flex;
+  flex-direction: column;
+  .title-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  @media (max-width: 768px) {
+    padding: 75px 1rem 0;
+  }
+  .forecast-wrapper {
+    display: flex;
+    justify-content: start;
+    padding-top: 20px;
+    flex-wrap: wrap;
+    @media (max-width: 768px) {
+      justify-content: space-between;
+    }
+    @media (max-width: 768px) {
+      justify-content: center;
+    }
+  }
+}
